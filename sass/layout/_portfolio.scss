@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     &--1 {
       background-image: url(../img/port-barber.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
       grid-column: span 2;
@@ -15,35 +15,35 @@
 
     &--2 {
       background-image: url(../img/port-frankie.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
     }
 
     &--3 {
       background-image: url(../img/port-journal.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
     }
 
     &--4 {
       background-image: url(../img/port-pizza.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
     }
 
     &--5 {
       background-image: url(../img/port-soldiers.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
     }
 
     &--6 {
       background-image: url(../img/port-starbucks.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
       grid-column: span 2;

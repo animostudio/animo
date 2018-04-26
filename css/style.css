@@ -114,33 +114,33 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr; }
     .portfolio__item--1 {
       background-image: url(../img/port-barber.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
       grid-column: span 2; }
     .portfolio__item--2 {
       background-image: url(../img/port-frankie.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--3 {
       background-image: url(../img/port-journal.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--4 {
       background-image: url(../img/port-pizza.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--5 {
       background-image: url(../img/port-soldiers.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--6 {
       background-image: url(../img/port-starbucks.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
       grid-column: span 2; }
