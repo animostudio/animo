@@ -1,0 +1,17 @@
+{
+  "name": "animo",
+  "version": "1.0.0",
+  "description": "Landing page for Animo",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Vitoria Toebe",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}

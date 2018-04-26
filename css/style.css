@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*
+live-server
+npm run compile:sass
+*/
+/* ABSTRACTS */
+/* BASE */
+/* Universal Selector - tudo que colocar aqui é global */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ?? */ }
+
+/* ROOT */
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px (root font size) */
+  /* The standard browser font size is 16px, but some users with short sight increase it to larger font sizes, so if we set this to a specific px size, like 10px it would be too small for the user and we would be taking from him the option to choose how big they want to see a website, so we use percentages of the standard size, so it will always increase based on the user's size choice. */
+  text-align: center; }
+
+body {
+  background-color: #000;
+  box-sizing: border-box;
+  /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */ }
+
+.container {
+  margin: 0 10%;
+  position: relative; }
+
+.subtitle {
+  color: #fff;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.8em;
+  font-weight: 500;
+  margin-bottom: 40px; }
+
+/* COMPONENTS */
+/* LAYOUT */
+.header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px 0;
+  z-index: 10;
+  height: 90px; }
+  .header__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .header__menu ul {
+      list-style-type: none;
+      text-align: center;
+      align-content: center; }
+      .header__menu ul li {
+        text-align: center; }
+        .header__menu ul li img {
+          padding-top: 15px;
+          height: 70px; }
+    .header__menu--contact {
+      font-family: "Montserrat";
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      color: #242121;
+      font-size: 1.3em;
+      padding: 0 100px; }
+      .header__menu--contact span {
+        font-size: 12px; }
+
+.hero {
+  display: inherit; }
+  .hero__featured-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; }
+    .hero__featured-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+  .hero__overlay {
+    position: absolute;
+    border: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px; }
+    .hero__overlay-btn {
+      background-color: Transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      right: 47%;
+      top: 40%; }
+    .hero__overlay-a {
+      position: relative;
+      width: 25%;
+      top: 85%; }
+
+.portfolio {
+  margin-top: 3px; }
+  .portfolio__item {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .portfolio__item--1 {
+      background-image: url(../../img/port-barber.jpg);
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      grid-column: span 2; }
+    .portfolio__item--2 {
+      background-image: url(../../img/port-frankie.jpg);
+      height: 200px;
+      background-size: cover;
+      background-position: center; }
+    .portfolio__item--3 {
+      background-image: url(../../img/port-journal.jpg);
+      height: 200px;
+      background-size: cover;
+      background-position: center; }
+    .portfolio__item--4 {
+      background-image: url(../../img/port-pizza.jpg);
+      height: 200px;
+      background-size: cover;
+      background-position: center; }
+    .portfolio__item--5 {
+      background-image: url(../../img/port-soldiers.jpg);
+      height: 200px;
+      background-size: cover;
+      background-position: center; }
+    .portfolio__item--6 {
+      background-image: url(../../img/port-starbucks.jpg);
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      grid-column: span 2; }
+
+.our-work {
+  margin: 30px auto; }
+  .our-work__list {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .our-work__list .icon {
+      text-align: center; }
+      .our-work__list .icon--img {
+        margin: 0 auto; }
+      .our-work__list .icon--title {
+        font-family: "Montserrat";
+        font-weight: 100;
+        font-size: 1rem;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-top: 10px;
+        color: #fff;
+        line-height: 18px; }
+        .our-work__list .icon--title::after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 1px;
+          background: #fff;
+          margin: 0 auto; }
+      .our-work__list .icon--description {
+        font-family: "Montserrat";
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 10px 20px 20px 20px; }
+
+.footer .contact-form {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; }
+  .footer .contact-form__info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 5px;
+    justify-items: left; }
+    .footer .contact-form__info label {
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 1rem;
+      line-height: 25px;
+      margin-bottom: 4px; }
+    .footer .contact-form__info input {
+      color: #fff;
+      border: 4px solid #fff;
+      width: 100%;
+      background: none;
+      padding: 7px 10px;
+      margin-bottom: 10px;
+      outline: none;
+      font-size: 14px;
+      font-family: "Montserrat"; }
+  .footer .contact-form__message textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 4px solid #fff;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    resize: none;
+    color: #fff; }
+  .footer .contact-form__message .contact-btn {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    color: #000; }
+
+/* PAGES */

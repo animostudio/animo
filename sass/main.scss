@@ -1,0 +1,28 @@
+/*
+live-server
+npm run compile:sass
+*/
+
+/* ABSTRACTS */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+/* BASE */
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+/* COMPONENTS */
+@import "components/button";
+
+/* LAYOUT */
+@import "layout/header";
+@import "layout/hero";
+@import "layout/portfolio";
+@import "layout/ourwork";
+@import "layout/footer";
+
+/* PAGES */
+@import "pages/home";

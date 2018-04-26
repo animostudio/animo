@@ -1,0 +1,36 @@
+/* Universal Selector - tudo que colocar aqui é global */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ?? */
+}
+
+/* ROOT */
+html {
+  font-size: 62.5%; /* 1rem = 10px (root font size) */
+  /* The standard browser font size is 16px, but some users with short sight increase it to larger font sizes, so if we set this to a specific px size, like 10px it would be too small for the user and we would be taking from him the option to choose how big they want to see a website, so we use percentages of the standard size, so it will always increase based on the user's size choice. */
+  text-align: center;
+}
+
+body {
+  background-color: #000;
+  box-sizing: border-box; /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */
+}
+
+.container {
+  margin: 0 10%;
+  position: relative;
+}
+
+.subtitle {
+  color: #fff;
+  font-family: $font-family;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.8em;
+  font-weight: 500;
+  margin-bottom: 40px;
+}

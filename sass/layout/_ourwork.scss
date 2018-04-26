@@ -1,0 +1,45 @@
+.our-work {
+  margin: 30px auto;
+
+  &__list {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .icon {
+      text-align: center;
+
+      &--img {
+        margin: 0 auto;
+      }
+
+      &--title {
+        font-family: $font-family;
+        font-weight: 100;
+        font-size: 1rem;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-top: 10px;
+        color: $color-white;
+        line-height: 18px;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 1px;
+          background: $color-white;
+          margin: 0 auto;
+        }
+      }
+
+      &--description {
+        font-family: $font-family;
+        color: $color-white;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 10px 20px 20px 20px;
+      }
+    }
+  }
+}

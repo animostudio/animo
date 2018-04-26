@@ -1,0 +1,43 @@
+.hero {
+  display: inherit;
+  &__featured-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    border: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+
+    &-btn {
+      background-color: Transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      right: 47%;
+      top: 40%;
+    }
+
+    &-a {
+      position: relative;
+      width: 25%;
+      top: 85%;
+    }
+  }
+}
