@@ -4,7 +4,7 @@
 
   .parallax {
     position: absolute;
-    background: url(../../img/montanha.jpg) no-repeat center;
+    background: url(../img/montanha.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     perspective: 100px;
@@ -13,7 +13,7 @@
     z-index: 3;
 
     &__layer--1 {
-      background-image: url(../../img/pinheiros.png);
+      background-image: url(../img/pinheiros.png);
       position: absolute;
       border: none;
       width: 100%;
