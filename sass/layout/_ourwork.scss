@@ -1,58 +1,89 @@
+.div {
+  display: block;
+}
+
 .our-work {
   margin: 0;
   position: relative;
 
   .parallax {
-    position: relative;
-    background: url(../img/montanha.jpg) no-repeat center;
-    background-size: cover;
+    perspective: 1px;
     height: 100vh;
-    perspective: 100px;
-    width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 
-    &__layer--1 {
-      background-image: url(../img/pinheiros.png);
-      position: absolute;
-      border: none;
-      width: 100%;
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
+
+    &__group {
+      position: relative;
       height: 100vh;
-      margin-bottom: 10px;
-      background-size: cover;
-    }
-
-    &__layer--3 {
-      position: absolute;
-      font-family: $font-family;
-      text-align: center;
-      color: #fff;
-      height: 100%;
-      width: 100%;
-
-      & .our-work__name {
-        text-transform: uppercase;
-        font-size: 4rem;
-        text-align: left;
-        font-weight: 600;
-        letter-spacing: 0.8rem;
-        padding-left: 10%;
-        padding-top: 5%;
-        position: relative;
+      // transform: translate3d();
+      & .parallax__layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
 
-      & .our-work__desc {
-        margin-top: 5%;
-        & li {
+      & .parallax__layer--1 {
+        background-image: url(../img/montanha.png);
+        background-size: cover;
+        // transform: translateZ(-1) scale(2);
+      }
+
+      & .parallax__layer--2 {
+        background-image: url(../img/pinheiros.png);
+        background-size: cover;
+        // transform: translateZ(0);
+      }
+
+      & .parallax__layer--3 {
+        position: absolute;
+        font-family: $font-family;
+        text-align: center;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+
+        & .our-work__name {
           text-transform: uppercase;
-          font-size: 2rem;
-          text-align: right;
-          padding-right: 10%;
-          line-height: 50px;
-          font-weight: 400;
-          font-style: italic;
-          letter-spacing: 1rem;
+          font-size: 4rem;
+          text-align: left;
+          font-weight: 600;
+          letter-spacing: 0.8rem;
+          padding-left: 10%;
+          padding-top: 5%;
+          position: relative;
+        }
+
+        & .our-work__desc {
+          margin-top: 5%;
+          & li {
+            list-style-type: none;
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-align: right;
+            padding-right: 10%;
+            line-height: 50px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 1rem;
+          }
         }
       }
     }
+  }
+}
+
+$parallax__layers: 6;
+
+@for $i from 0 through $parallax__layers {
+  $x: ($parallax__layers - $i) / 2;
+  .parallax__layer__#{$i} {
+    transform: translateZ(-100 * $x#{px}) scale($x + 1);
   }
 }

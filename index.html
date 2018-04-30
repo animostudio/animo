@@ -18,29 +18,10 @@
 <body>
     <!-- HEADDER / NAVEGATION BAR -->
     <header class="header">
-        <div>
-            <nav class="header__menu">
-                <ul>
-                    <li>
-                        <p class="header__menu--contact">contato@animo.studio</p>
-
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="index.html" class="header__logo">
-                            <img src="img/animoStudio-black.png" alt="Animo Studio Logo - Header">
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p class="header__menu--contact">
-                            <span>+55</span> 55 99153 1278
-                        </p>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header__menu">
+            <a href="index.html" class="header__logo" id="logo" onmousemove="showLogo()">
+                <img src="img/animoStudio-white.png" alt="Animo Studio Logo - Header">
+            </a>
         </div>
     </header>
 
@@ -52,7 +33,7 @@
 
             <div class="hero__overlay ">
                 <!-- Play Button -->
-                <button onclick="changeZindex() " class="hero__overlay-btn btn btn--animated ">
+                <button onclick="changeZindex()" class="hero__overlay-btn btn btn--animated ">
                     <img src="img/play-4.png " alt="Animo Play Button - Featured Video ">
                 </button>
                 <!-- Logo Animo -->
@@ -70,35 +51,63 @@
             <div class="portfolio__item--4 "></div>
             <div class="portfolio__item--5 "></div>
             <div class="portfolio__item--6 "></div>
+            <div class="portfolio__item--7 "></div>
+            <div class="portfolio__item--8 "></div>
         </div>
     </section>
 
     <!-- O QUE FAZEMOS -->
     <section class="our-work">
         <div class="parallax">
+            <div class="parallax__group">
+                <!-- Parallax Layers -->
+                <div class="parallax__layer parallax__layer--1"></div>
+                <div class="parallax__layer parallax__layer--2"></div>
 
-            <div class="parallax__layer parallax__layer--1"></div>
-            <div class="parallax__layer parallax__layer--2"></div>
+                <!-- Parallax Text -->
+                <div class="parallax__layer parallax__layer--3">
+                    <p class="our-work__name">
+                        O que fazemos
+                    </p>
 
-            <div class="parallax__layer parallax__layer--3">
-
-                <p class="our-work__name">
-                    O que fazemos
-                </p>
-
-                <ul class="our-work__desc">
-                    <li>Vídeos</li>
-                    <li>Web Design</li>
-                    <li>Promocional</li>
-                    <li>Social Media</li>
-                    <li>Identidade Visual</li>
-                </ul>
+                    <ul class="our-work__desc">
+                        <li>Videos</li>
+                        <li>Web Design</li>
+                        <li>Promocional</li>
+                        <li>Social Media</li>
+                        <li>Identidade Visual</li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <section class="test">
+    <section class="footer">
+        <div class="footer__grid">
+            <div class="footer__grid--contato">
+                <p>Entre em contato</p>
 
+                <div class="contato__lista">
+                    <ul>
+                        <li>
+                            <span>55</span> 9 915 1278
+                        </li>
+                        <li>
+                            <span>55</span> 9 9632 0226
+                        </li>
+                        <li>contato@animo.studio</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__grid--triangulo">
+                <div class="triangulo--overlay"></div>
+            </div>
+            <div class="footer__grid--orcamento">
+                <a href="#">Solicite um orçamento</a>
+            </div>
+        </div>
     </section>
 
 </body>

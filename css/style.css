@@ -46,31 +46,13 @@ body {
   position: relative;
   top: 0;
   width: 100%;
-  background: #fff;
-  padding: 10px 0;
+  background: transparent;
   z-index: 10;
-  height: 90px; }
-  .header__menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
-    .header__menu ul {
-      list-style-type: none;
-      text-align: center;
-      align-content: center; }
-      .header__menu ul li {
-        text-align: center; }
-        .header__menu ul li img {
-          padding-top: 15px;
-          height: 70px; }
-    .header__menu--contact {
-      font-family: "Montserrat";
-      font-weight: 500;
-      letter-spacing: 0.2em;
-      color: #242121;
-      font-size: 1.3em;
-      padding: 0 100px; }
-      .header__menu--contact span {
-        font-size: 12px; }
+  height: 0; }
+  .header__menu img {
+    height: 70px;
+    position: relative;
+    visibility: hidden; }
 
 .hero {
   display: inherit; }
@@ -104,13 +86,12 @@ body {
     .hero__overlay-a {
       position: relative;
       width: 25%;
-      top: 85%; }
+      top: 60%; }
 
 .portfolio {
   margin-top: 3px; }
   .portfolio__item {
     display: grid;
-    grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
     .portfolio__item--1 {
       background-image: url(../img/port-barber.jpg);
@@ -145,98 +126,128 @@ body {
       background-position: center;
       grid-column: span 2; }
 
+.div {
+  display: block; }
+
 .our-work {
   margin: 0;
   position: relative; }
   .our-work .parallax {
-    position: relative;
-    background: url(../img/montanha.jpg) no-repeat center;
-    background-size: cover;
+    perspective: 1px;
     height: 100vh;
-    perspective: 100px;
-    width: 100%;
-    overflow: hidden; }
-    .our-work .parallax__layer--1 {
-      background-image: url(../img/pinheiros.png);
-      position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth; }
+    .our-work .parallax__group {
+      position: relative;
+      height: 100vh; }
+      .our-work .parallax__group .parallax__layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+      .our-work .parallax__group .parallax__layer--1 {
+        background-image: url(../img/montanha.png);
+        background-size: cover; }
+      .our-work .parallax__group .parallax__layer--2 {
+        background-image: url(../img/pinheiros.png);
+        background-size: cover; }
+      .our-work .parallax__group .parallax__layer--3 {
+        position: absolute;
+        font-family: "Montserrat";
+        text-align: center;
+        color: #fff;
+        height: 100%;
+        width: 100%; }
+        .our-work .parallax__group .parallax__layer--3 .our-work__name {
+          text-transform: uppercase;
+          font-size: 4rem;
+          text-align: left;
+          font-weight: 600;
+          letter-spacing: 0.8rem;
+          padding-left: 10%;
+          padding-top: 5%;
+          position: relative; }
+        .our-work .parallax__group .parallax__layer--3 .our-work__desc {
+          margin-top: 5%; }
+          .our-work .parallax__group .parallax__layer--3 .our-work__desc li {
+            list-style-type: none;
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-align: right;
+            padding-right: 10%;
+            line-height: 50px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 1rem; }
+
+.parallax__layer__0 {
+  transform: translateZ(-300px) scale(4); }
+
+.parallax__layer__1 {
+  transform: translateZ(-250px) scale(3.5); }
+
+.parallax__layer__2 {
+  transform: translateZ(-200px) scale(3); }
+
+.parallax__layer__3 {
+  transform: translateZ(-150px) scale(2.5); }
+
+.parallax__layer__4 {
+  transform: translateZ(-100px) scale(2); }
+
+.parallax__layer__5 {
+  transform: translateZ(-50px) scale(1.5); }
+
+.parallax__layer__6 {
+  transform: translateZ(0px) scale(1); }
+
+.footer {
+  background-color: #000;
+  position: relative;
+  background-image: url(../img/pinheiros2.jpg);
+  background-size: cover;
+  background-position: bottom; }
+  .footer__grid {
+    font-family: "Montserrat";
+    height: 50vh; }
+    .footer__grid--contato {
+      float: left;
+      color: #fff; }
+      .footer__grid--contato p {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 3rem;
+        letter-spacing: 0.2rem;
+        text-align: left;
+        padding: 20px 0 0 10px; }
+      .footer__grid--contato .contato__lista ul {
+        color: #fff;
+        list-style-type: none;
+        font-size: 1.2rem;
+        text-align: right; }
+        .footer__grid--contato .contato__lista ul li span {
+          font-size: 0.9rem; }
+    .footer__grid--triangulo .triangulo--overlay {
+      position: relative;
       border: none;
       width: 100%;
-      height: 100vh;
-      margin-bottom: 10px;
+      height: 70px;
       background-size: cover; }
-    .our-work .parallax__layer--3 {
-      position: absolute;
-      font-family: "Montserrat";
-      text-align: center;
+    .footer__grid--orcamento {
+      float: right;
+      font-size: 1.5rem;
       color: #fff;
-      height: 100%;
-      width: 100%; }
-      .our-work .parallax__layer--3 .our-work__name {
-        text-transform: uppercase;
-        font-size: 4rem;
-        text-align: left;
-        font-weight: 600;
-        letter-spacing: 0.8rem;
-        padding-left: 10%;
-        padding-top: 5%;
-        position: relative; }
-      .our-work .parallax__layer--3 .our-work__desc {
-        margin-top: 5%; }
-        .our-work .parallax__layer--3 .our-work__desc li {
-          text-transform: uppercase;
-          font-size: 2rem;
-          text-align: right;
-          padding-right: 10%;
-          line-height: 50px;
-          font-weight: 400;
-          font-style: italic;
-          letter-spacing: 1rem; }
-
-.footer .contact-form {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px; }
-  .footer .contact-form__info {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 5px;
-    justify-items: left; }
-    .footer .contact-form__info label {
-      color: #fff;
-      font-family: "Montserrat";
-      font-size: 1rem;
-      line-height: 25px;
-      margin-bottom: 4px; }
-    .footer .contact-form__info input {
-      color: #fff;
-      border: 4px solid #fff;
-      width: 100%;
-      background: none;
-      padding: 7px 10px;
-      margin-bottom: 10px;
-      outline: none;
-      font-size: 14px;
-      font-family: "Montserrat"; }
-  .footer .contact-form__message textarea {
-    display: block;
-    width: 100%;
-    height: 120px;
-    border: 4px solid #fff;
-    background: none;
-    padding: 7px 10px;
-    margin-bottom: 10px;
-    outline: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    resize: none;
-    color: #fff; }
-  .footer .contact-form__message .contact-btn {
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    font-weight: 700;
-    display: block;
-    width: 100%;
-    color: #000; }
+      text-transform: uppercase;
+      grid-row-start: 2;
+      grid-column-start: 3;
+      font-weight: 300;
+      text-align: right; }
+      .footer__grid--orcamento a:link,
+      .footer__grid--orcamento a:visited {
+        text-decoration: none;
+        color: #fff; }
 
 /* PAGES */
