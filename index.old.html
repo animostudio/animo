@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <script src="js/main.js"></script>
+
+    <title>Animo Studio</title>
+</head>
+
+<body>
+    <!-- HEADDER / NAVEGATION BAR -->
+    <header class="header">
+        <div>
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <p class="header__menu--contact">contato@animo.studio</p>
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="index.html" class="header__logo">
+                            <img src="img/animoStudio-black.png" alt="Animo Studio Logo - Header">
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="header__menu--contact">
+                            <span>+55</span> 55 99153 1278
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO - FEATURED VIDEO -->
+    <section class="hero">
+        <div class="hero__featured-video">
+            <iframe id="featuredVideo" src="https://player.vimeo.com/video/257827649?color=ffffff&title=0&byline=0&portrait=0
+                            " width="640 " height="360 " frameborder="0 " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+            <div class="hero__overlay ">
+                <!-- Play Button -->
+                <button onclick="changeZindex() " class="hero__overlay-btn btn btn--animated ">
+                    <img src="img/play-4.png " alt="Animo Play Button - Featured Video ">
+                </button>
+                <!-- Logo Animo -->
+                <img class="hero__overlay-a " src="img/animo-white.png " alt="Animo A - Triangle Logo ">
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO - OTHER PROJECTS -->
+    <section class="portfolio container">
+        <div class="portfolio__item ">
+            <div class="portfolio__item--1 "></div>
+            <div class="portfolio__item--2 "></div>
+            <div class="portfolio__item--3 "></div>
+            <div class="portfolio__item--4 "></div>
+            <div class="portfolio__item--5 "></div>
+            <div class="portfolio__item--6 "></div>
+        </div>
+    </section>
+
+    <!-- O QUE FAZEMOS -->
+    <section class="our-work container">
+        <h2 class="subtitle">O que fazemos</h2>
+        <ul class="our-work__list">
+            <li>
+                <div class="icon">
+                    <img src="img/video-icon.png" alt="" class="icon--img">
+                </div>
+                <h3 class="icon--title">Vídeo</h3>
+                <p class="icon--description">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                </p>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="img/idvisual-icon.png" alt="" class="icon--img">
+                </div>
+                <h3 class="icon--title">Identidade Visual</h3>
+                <p class="icon--description">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                </p>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="img/webdesign-icon.png" alt="" class="icon--img">
+                </div>
+                <h3 class="icon--title">Web Design</h3>
+                <p class="icon--description">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                </p>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="img/promocional-icon.png" alt="" class="icon--img">
+                </div>
+                <h3 class="icon--title">Promocional</h3>
+                <p class="icon--description">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="subtitle">Contato</h2>
+
+            <form action="enviar.php" method="post" name="form" class="phpform contact-form">
+                <div class="contact-form__info">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text">
+
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email">
+
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="text">
+                </div>
+
+                <div class="contact-form__message">
+                    <textarea name="mensagem" id="mensagem"></textarea>
+
+                    <button id="enviar" name="enviar" type="submit" class="btn contact-btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,44 +1,56 @@
 .our-work {
-  margin: 30px auto;
+  margin: 0;
+  position: relative;
 
-  &__list {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    .icon {
+  .parallax {
+    position: absolute;
+    background: url(../../img/montanha.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    perspective: 100px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
+
+    &__layer--1 {
+      background-image: url(../../img/pinheiros.png);
+      position: absolute;
+      border: none;
+      width: 100%;
+      height: 100vh;
+      margin-bottom: 10px;
+      background-size: cover;
+      z-index: 4;
+    }
+
+    &__layer--3 {
+      position: absolute;
+      font-family: $font-family;
+      margin-top: 200px;
       text-align: center;
+      color: #fff;
+      height: 100%;
+      width: 100%;
 
-      &--img {
-        margin: 0 auto;
-      }
-
-      &--title {
-        font-family: $font-family;
-        font-weight: 100;
-        font-size: 1rem;
-        line-height: 25px;
+      & .our-work__name {
         text-transform: uppercase;
-        letter-spacing: 0.2em;
-        margin-top: 10px;
-        color: $color-white;
-        line-height: 18px;
-
-        &::after {
-          content: "";
-          display: block;
-          width: 60px;
-          height: 1px;
-          background: $color-white;
-          margin: 0 auto;
-        }
+        font-size: 4rem;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 0.8rem;
+        padding-left: 10%;
+        position: relative;
       }
 
-      &--description {
-        font-family: $font-family;
-        color: $color-white;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding: 10px 20px 20px 20px;
+      & .our-work__desc li {
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: right;
+        padding-right: 50px;
+        line-height: 50px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 1rem;
       }
     }
   }
