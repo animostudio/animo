@@ -3,14 +3,13 @@
   position: relative;
 
   .parallax {
-    position: absolute;
+    position: relative;
     background: url(../img/montanha.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     perspective: 100px;
     width: 100%;
     overflow: hidden;
-    z-index: 3;
 
     &__layer--1 {
       background-image: url(../img/pinheiros.png);
@@ -20,13 +19,11 @@
       height: 100vh;
       margin-bottom: 10px;
       background-size: cover;
-      z-index: 4;
     }
 
     &__layer--3 {
       position: absolute;
       font-family: $font-family;
-      margin-top: 200px;
       text-align: center;
       color: #fff;
       height: 100%;
@@ -39,18 +36,22 @@
         font-weight: 600;
         letter-spacing: 0.8rem;
         padding-left: 10%;
+        padding-top: 5%;
         position: relative;
       }
 
-      & .our-work__desc li {
-        text-transform: uppercase;
-        font-size: 2rem;
-        text-align: right;
-        padding-right: 50px;
-        line-height: 50px;
-        font-weight: 400;
-        font-style: italic;
-        letter-spacing: 1rem;
+      & .our-work__desc {
+        margin-top: 5%;
+        & li {
+          text-transform: uppercase;
+          font-size: 2rem;
+          text-align: right;
+          padding-right: 10%;
+          line-height: 50px;
+          font-weight: 400;
+          font-style: italic;
+          letter-spacing: 1rem;
+        }
       }
     }
   }

@@ -149,14 +149,13 @@ body {
   margin: 0;
   position: relative; }
   .our-work .parallax {
-    position: absolute;
+    position: relative;
     background: url(../img/montanha.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     perspective: 100px;
     width: 100%;
-    overflow: hidden;
-    z-index: 3; }
+    overflow: hidden; }
     .our-work .parallax__layer--1 {
       background-image: url(../img/pinheiros.png);
       position: absolute;
@@ -164,12 +163,10 @@ body {
       width: 100%;
       height: 100vh;
       margin-bottom: 10px;
-      background-size: cover;
-      z-index: 4; }
+      background-size: cover; }
     .our-work .parallax__layer--3 {
       position: absolute;
       font-family: "Montserrat";
-      margin-top: 200px;
       text-align: center;
       color: #fff;
       height: 100%;
@@ -181,16 +178,19 @@ body {
         font-weight: 600;
         letter-spacing: 0.8rem;
         padding-left: 10%;
+        padding-top: 5%;
         position: relative; }
-      .our-work .parallax__layer--3 .our-work__desc li {
-        text-transform: uppercase;
-        font-size: 2rem;
-        text-align: right;
-        padding-right: 50px;
-        line-height: 50px;
-        font-weight: 400;
-        font-style: italic;
-        letter-spacing: 1rem; }
+      .our-work .parallax__layer--3 .our-work__desc {
+        margin-top: 5%; }
+        .our-work .parallax__layer--3 .our-work__desc li {
+          text-transform: uppercase;
+          font-size: 2rem;
+          text-align: right;
+          padding-right: 10%;
+          line-height: 50px;
+          font-weight: 400;
+          font-style: italic;
+          letter-spacing: 1rem; }
 
 .footer .contact-form {
   display: grid;
