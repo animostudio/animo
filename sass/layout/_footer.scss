@@ -1,9 +1,24 @@
 .footer {
-  background-color: #000;
-  position: relative;
   background-image: url(../img/pinheiros2.jpg);
   background-size: cover;
   background-position: bottom;
+
+  & #footer {
+    background-color: #000;
+    position: absolute;
+    z-index: 98;
+  }
+
+  & #footer-content {
+    width: 100%
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99;
+    position: relative;
+    background-color: #210002;
+  }
 
   &__grid {
     font-family: $font-family;
@@ -12,6 +27,7 @@
     &--contato {
       float: left;
       color: #fff;
+      z-index: 100;
 
       & p {
         font-size: 1.5rem;

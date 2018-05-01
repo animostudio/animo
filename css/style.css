@@ -27,7 +27,7 @@ body {
   /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */ }
 
 .container {
-  margin: 0 10%;
+  width: 100%;
   position: relative; }
 
 .subtitle {
@@ -89,7 +89,8 @@ body {
       top: 60%; }
 
 .portfolio {
-  margin-top: 3px; }
+  margin-top: 3px;
+  position: relative; }
   .portfolio__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -127,74 +128,75 @@ body {
       grid-column: span 2; }
 
 .our-work {
-  margin: 0;
+  margin: 1px;
   position: relative; }
-  .our-work .parallax {
-    perspective: 100px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0; }
-    .our-work .parallax::-webkit-scrollbar {
-      display: none; }
-    .our-work .parallax__layer {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-      .our-work .parallax__layer img {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover; }
-      .our-work .parallax__layer--1 {
-        transform: translateZ(-100px) scale(3); }
-      .our-work .parallax__layer--2 {
-        transform: translateZ(0px) scale(1); }
-      .our-work .parallax__layer--3 {
-        position: absolute;
-        font-family: "Montserrat";
-        text-align: center;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        transform: translateZ(-6px) scale(7); }
-        .our-work .parallax__layer--3 .our-work__name {
-          text-transform: uppercase;
-          font-size: 4rem;
-          text-align: left;
-          font-weight: 600;
-          letter-spacing: 0.8rem;
-          padding-left: 10%;
-          padding-top: 5%;
-          position: relative; }
-        .our-work .parallax__layer--3 .our-work__desc {
-          margin-top: 5%; }
-          .our-work .parallax__layer--3 .our-work__desc li {
-            list-style-type: none;
-            text-transform: uppercase;
-            font-size: 2rem;
-            text-align: right;
-            padding-right: 10%;
-            line-height: 50px;
-            font-weight: 400;
-            font-style: italic;
-            letter-spacing: 1rem; }
-    .our-work .parallax__cover {
-      background: #000;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      height: 2000px;
-      z-index: 2; }
+
+.keyart,
+.keyart_layer {
+  height: 1000px; }
+
+#parallax {
+  display: block;
+  scroll-behavior: smooth; }
+
+.keyart {
+  position: relative;
+  z-index: 10; }
+
+.keyart_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute; }
+
+.keyart_layer.parallax {
+  position: fixed; }
+
+#keyart-1 {
+  background-color: #000;
+  background-image: url(../img/montanha.jpg); }
+
+#keyart-2 {
+  position: absolute;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  transform: translateZ(0);
+  z-index: 97; }
+
+#keyart-3 {
+  background-image: url(../img/pinheiros.png); }
+
+#keyart-scrim {
+  background-color: #000;
+  opacity: 0; }
+
+.our-work__name {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.8rem;
+  padding-left: 10%;
+  padding-top: 5%;
+  position: relative; }
+
+.our-work__desc {
+  margin-top: 5%; }
+
+.our-work__desc li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 10%;
+  line-height: 50px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1rem; }
 
 .footer {
   background-color: #000;

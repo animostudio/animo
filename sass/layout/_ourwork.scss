@@ -1,94 +1,82 @@
 .our-work {
-  margin: 0;
+  margin: 1px;
   position: relative;
+}
 
-  .parallax {
-    perspective: 100px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+.keyart,
+.keyart_layer {
+  height: 1000px;
+}
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+#parallax {
+  display: block;
+  scroll-behavior: smooth;
+}
 
-    // &__group {
-    //   position: relative;
-    //   height: 100vh;
-    //   // transform: translate3d();
-    &__layer {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+.keyart {
+  position: relative;
+  z-index: 10;
+}
 
-      & img {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-      }
+.keyart_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
 
-      &--1 {
-        transform: translateZ(-100px) scale(3);
-      }
+.keyart_layer.parallax {
+  position: fixed;
+}
 
-      &--2 {
-        transform: translateZ(0px) scale(1);
-      }
+#keyart-1 {
+  background-color: #000;
+  background-image: url(../img/montanha.jpg);
+}
 
-      &--3 {
-        position: absolute;
-        font-family: $font-family;
-        text-align: center;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        transform: translateZ(-6px) scale(7);
+#keyart-2 {
+  position: absolute;
+  font-family: $font-family;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  transform: translateZ(0);
+  z-index: 97;
+}
 
-        & .our-work__name {
-          text-transform: uppercase;
-          font-size: 4rem;
-          text-align: left;
-          font-weight: 600;
-          letter-spacing: 0.8rem;
-          padding-left: 10%;
-          padding-top: 5%;
-          position: relative;
-        }
+#keyart-3 {
+  background-image: url(../img/pinheiros.png);
+}
 
-        & .our-work__desc {
-          margin-top: 5%;
-          & li {
-            list-style-type: none;
-            text-transform: uppercase;
-            font-size: 2rem;
-            text-align: right;
-            padding-right: 10%;
-            line-height: 50px;
-            font-weight: 400;
-            font-style: italic;
-            letter-spacing: 1rem;
-          }
-        }
-      }
-    }
-    &__cover {
-      background: #000;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      height: 2000px;
-      z-index: 2;
-    }
-  }
+#keyart-scrim {
+  background-color: #000;
+  opacity: 0;
+}
+
+.our-work__name {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.8rem;
+  padding-left: 10%;
+  padding-top: 5%;
+  position: relative;
+}
+
+.our-work__desc {
+  margin-top: 5%;
+}
+.our-work__desc li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 10%;
+  line-height: 50px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1rem;
 }
