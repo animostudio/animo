@@ -138,6 +138,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth; }
+    .our-work .parallax::-webkit-scrollbar {
+      display: none; }
     .our-work .parallax__group {
       position: relative;
       height: 100vh; }
@@ -148,18 +150,22 @@ body {
         bottom: 0;
         left: 0; }
       .our-work .parallax__group .parallax__layer--1 {
-        background-image: url(../img/montanha.png);
-        background-size: cover; }
+        background-image: url(../img/montanha.jpg);
+        background-size: cover;
+        transform: translateZ(-1px) scale(2); }
       .our-work .parallax__group .parallax__layer--2 {
         background-image: url(../img/pinheiros.png);
-        background-size: cover; }
+        background-size: cover;
+        height: 100vh;
+        transform: translateZ(0px); }
       .our-work .parallax__group .parallax__layer--3 {
         position: absolute;
         font-family: "Montserrat";
         text-align: center;
         color: #fff;
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        transform: translateZ(-6px) scale(7); }
         .our-work .parallax__group .parallax__layer--3 .our-work__name {
           text-transform: uppercase;
           font-size: 4rem;
@@ -181,27 +187,6 @@ body {
             font-weight: 400;
             font-style: italic;
             letter-spacing: 1rem; }
-
-.parallax__layer__0 {
-  transform: translateZ(-300px) scale(4); }
-
-.parallax__layer__1 {
-  transform: translateZ(-250px) scale(3.5); }
-
-.parallax__layer__2 {
-  transform: translateZ(-200px) scale(3); }
-
-.parallax__layer__3 {
-  transform: translateZ(-150px) scale(2.5); }
-
-.parallax__layer__4 {
-  transform: translateZ(-100px) scale(2); }
-
-.parallax__layer__5 {
-  transform: translateZ(-50px) scale(1.5); }
-
-.parallax__layer__6 {
-  transform: translateZ(0px) scale(1); }
 
 .footer {
   background-color: #000;
