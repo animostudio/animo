@@ -95,70 +95,70 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr; }
     .portfolio__item--1 {
       background-image: url(../img/port-barber.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
       grid-column: span 2; }
     .portfolio__item--2 {
       background-image: url(../img/port-frankie.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--3 {
       background-image: url(../img/port-journal.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--4 {
       background-image: url(../img/port-pizza.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--5 {
       background-image: url(../img/port-soldiers.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center; }
     .portfolio__item--6 {
       background-image: url(../img/port-starbucks.jpg);
-      height: 200px;
+      height: 500px;
       background-size: cover;
       background-position: center;
       grid-column: span 2; }
-
-.div {
-  display: block; }
 
 .our-work {
   margin: 0;
   position: relative; }
   .our-work .parallax {
-    perspective: 1px;
+    perspective: 100px;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    scroll-behavior: smooth; }
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
     .our-work .parallax::-webkit-scrollbar {
       display: none; }
-    .our-work .parallax__group {
-      position: relative;
-      height: 100vh; }
-      .our-work .parallax__group .parallax__layer {
+    .our-work .parallax__layer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      .our-work .parallax__layer img {
+        display: block;
         position: absolute;
-        top: 0;
-        right: 0;
         bottom: 0;
-        left: 0; }
-      .our-work .parallax__group .parallax__layer--1 {
-        background-image: url(../img/montanha.jpg);
-        background-size: cover;
-        transform: translateZ(-1px) scale(2); }
-      .our-work .parallax__group .parallax__layer--2 {
-        background-image: url(../img/pinheiros.png);
-        background-size: cover;
+        width: 100vw;
         height: 100vh;
-        transform: translateZ(0px); }
-      .our-work .parallax__group .parallax__layer--3 {
+        object-fit: cover; }
+      .our-work .parallax__layer--1 {
+        transform: translateZ(-100px) scale(3); }
+      .our-work .parallax__layer--2 {
+        transform: translateZ(0px) scale(1); }
+      .our-work .parallax__layer--3 {
         position: absolute;
         font-family: "Montserrat";
         text-align: center;
@@ -166,7 +166,7 @@ body {
         height: 100%;
         width: 100%;
         transform: translateZ(-6px) scale(7); }
-        .our-work .parallax__group .parallax__layer--3 .our-work__name {
+        .our-work .parallax__layer--3 .our-work__name {
           text-transform: uppercase;
           font-size: 4rem;
           text-align: left;
@@ -175,9 +175,9 @@ body {
           padding-left: 10%;
           padding-top: 5%;
           position: relative; }
-        .our-work .parallax__group .parallax__layer--3 .our-work__desc {
+        .our-work .parallax__layer--3 .our-work__desc {
           margin-top: 5%; }
-          .our-work .parallax__group .parallax__layer--3 .our-work__desc li {
+          .our-work .parallax__layer--3 .our-work__desc li {
             list-style-type: none;
             text-transform: uppercase;
             font-size: 2rem;
@@ -187,6 +187,14 @@ body {
             font-weight: 400;
             font-style: italic;
             letter-spacing: 1rem; }
+    .our-work .parallax__cover {
+      background: #000;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 2000px;
+      z-index: 2; }
 
 .footer {
   background-color: #000;
