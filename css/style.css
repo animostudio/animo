@@ -90,7 +90,9 @@ body {
 
 .portfolio {
   margin-top: 3px;
-  position: relative; }
+  position: relative;
+  z-index: 98;
+  background-color: #000; }
   .portfolio__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -146,7 +148,7 @@ body {
 .keyart_layer {
   background-position: bottom center;
   background-size: cover;
-  background-repeat: repeat-x;
+  background-repeat: repeat-y;
   width: 100%;
   position: absolute; }
 
@@ -155,7 +157,9 @@ body {
 
 #keyart-1 {
   background-color: #000;
-  background-image: url(../img/montanha.jpg); }
+  background-image: url(../img/montanha.jpg);
+  top: 140%;
+  background-size: cover; }
 
 #keyart-2 {
   position: absolute;
@@ -198,18 +202,55 @@ body {
   font-style: italic;
   letter-spacing: 1rem; }
 
-.footer {
+.teste {
+  background-color: #000;
+  color: #fff;
+  height: 100px;
+  position: relative;
+  z-index: 98; }
+
+#hello {
+  color: #fff; }
+
+#maincontain {
   background-color: #000;
   position: relative;
+  z-index: 98; }
+
+#main {
+  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+  position: relative;
+  background-color: #000; }
+
+.footer {
   background-image: url(../img/pinheiros2.jpg);
   background-size: cover;
   background-position: bottom; }
+  .footer #footer {
+    background-color: #000;
+    position: absolute;
+    z-index: 98; }
+  .footer #footer-content {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99;
+    position: relative;
+    background-color: #210002; }
   .footer__grid {
     font-family: "Montserrat";
     height: 50vh; }
     .footer__grid--contato {
       float: left;
-      color: #fff; }
+      color: #fff;
+      z-index: 100; }
       .footer__grid--contato p {
         font-size: 1.5rem;
         text-transform: uppercase;

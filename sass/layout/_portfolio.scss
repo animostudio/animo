@@ -1,6 +1,8 @@
 .portfolio {
   margin-top: 3px;
   position: relative;
+  z-index: 98;
+  background-color: #000;
 
   &__item {
     display: grid;

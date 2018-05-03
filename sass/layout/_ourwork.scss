@@ -21,7 +21,7 @@
 .keyart_layer {
   background-position: bottom center;
   background-size: cover;
-  background-repeat: repeat-x;
+  background-repeat: repeat-y;
   width: 100%;
   position: absolute;
 }
@@ -33,6 +33,8 @@
 #keyart-1 {
   background-color: #000;
   background-image: url(../img/montanha.jpg);
+  top: 140%;
+  background-size: cover;
 }
 
 #keyart-2 {
@@ -79,4 +81,33 @@
   font-weight: 400;
   font-style: italic;
   letter-spacing: 1rem;
+}
+
+.teste {
+  background-color: #000;
+  color: #fff;
+  height: 100px;
+  position: relative;
+  z-index: 98;
+}
+
+#hello {
+  color: #fff;
+}
+
+#maincontain {
+  background-color: #000;
+  position: relative;
+  z-index: 98;
+}
+
+#main {
+  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+  position: relative;
+  background-color: #000;
 }

@@ -3,5 +3,5 @@ function changeZindex() {
 }
 
 function showLogo() {
-  document.getElementById("logo").style.display = "visible";
+  document.getElementById("logo").style.visibility = "visible";
 }
