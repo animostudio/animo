@@ -171,7 +171,8 @@ body {
   z-index: 97; }
 
 #keyart-3 {
-  background-image: url(../img/pinheiros.png); }
+  background-image: url(../img/pinheiros.png);
+  background-position: center center; }
 
 #keyart-scrim {
   background-color: #000;
@@ -240,19 +241,27 @@ body {
 
 @media only screen and (min-width: 1526px) and (max-width: 1850px) {
   #keyart-1 {
-    top: 120%; } }
+    top: 125%; }
+  #keyart-3 {
+    background-position: top center; } }
 
 @media only screen and (min-width: 1851px) and (max-width: 1900px) {
   #keyart-1 {
-    top: 130%; } }
+    top: 135%; }
+  #keyart-3 {
+    background-position: top center; } }
 
 @media only screen and (min-width: 1901px) and (max-width: 2100px) {
   #keyart-1 {
-    top: 140%; } }
+    top: 145%; }
+  #keyart-3 {
+    background-position: top center; } }
 
 @media only screen and (min-width: 2101px) {
   #keyart-1 {
-    top: 145%; } }
+    top: 150%; }
+  #keyart-3 {
+    background-position: top center; } }
 
 .footer {
   background-image: url(../img/pinheiros2.jpg);
