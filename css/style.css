@@ -158,8 +158,7 @@ body {
 #keyart-1 {
   background-color: #000;
   background-image: url(../img/montanha.jpg);
-  top: 140%;
-  background-size: cover; }
+  top: 150%; }
 
 #keyart-2 {
   position: absolute;
@@ -226,6 +225,34 @@ body {
   z-index: 99;
   position: relative;
   background-color: #000; }
+
+@media only screen and (max-width: 900px) {
+  #keyart-1 {
+    top: 90%; } }
+
+@media only screen and (min-width: 901px) and (max-width: 1220px) {
+  #keyart-1 {
+    top: 100%; } }
+
+@media only screen and (min-width: 1221px) and (max-width: 1525px) {
+  #keyart-1 {
+    top: 110%; } }
+
+@media only screen and (min-width: 1526px) and (max-width: 1850px) {
+  #keyart-1 {
+    top: 120%; } }
+
+@media only screen and (min-width: 1851px) and (max-width: 1900px) {
+  #keyart-1 {
+    top: 130%; } }
+
+@media only screen and (min-width: 1901px) and (max-width: 2100px) {
+  #keyart-1 {
+    top: 140%; } }
+
+@media only screen and (min-width: 2101px) {
+  #keyart-1 {
+    top: 145%; } }
 
 .footer {
   background-image: url(../img/pinheiros2.jpg);
