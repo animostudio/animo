@@ -18,7 +18,7 @@
   font-size: 0px;
 
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .zoom-container {
@@ -34,7 +34,7 @@
   width: auto;
   height: 400px;
   object-position: center;
-  object-fit: fill;
+  object-fit: cover;
   -webkit-transition: all 0.5s ease;
   /* Safari and Chrome */
   -moz-transition: all 0.5s ease;
@@ -45,6 +45,7 @@
   /* Opera */
   transition: all 0.5s ease;
 
+  -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
@@ -89,6 +90,7 @@
   /* Opera */
   transform: scale(1.25);
 
+  -webkit-filter: grayscale(0);
   filter: grayscale(0);
   transition: 2s linear;
 
