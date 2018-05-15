@@ -24,7 +24,8 @@ html {
 body {
   background-color: #000;
   box-sizing: border-box;
-  /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */ }
+  /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */
+  scroll-behavior: smooth; }
 
 .container {
   width: 100%;
@@ -88,49 +89,96 @@ body {
       width: 25%;
       top: 60%; }
 
-.portfolio {
-  margin-top: 3px;
-  position: relative;
+.porfolio {
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: #000; }
+
+.container {
+  width: 100%;
   z-index: 98;
   background-color: #000; }
-  .portfolio__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
-    .portfolio__item--1 {
-      background-image: url(../img/port-barber.jpg);
-      height: 500px;
-      background-size: cover;
-      background-position: center;
-      grid-column: span 2; }
-    .portfolio__item--2 {
-      background-image: url(../img/port-frankie.jpg);
-      height: 500px;
-      background-size: cover;
-      background-position: center; }
-    .portfolio__item--3 {
-      background-image: url(../img/port-journal.jpg);
-      height: 500px;
-      background-size: cover;
-      background-position: center; }
-    .portfolio__item--4 {
-      background-image: url(../img/port-pizza.jpg);
-      height: 500px;
-      background-size: cover;
-      background-position: center; }
-    .portfolio__item--5 {
-      background-image: url(../img/port-soldiers.jpg);
-      height: 500px;
-      background-size: cover;
-      background-position: center; }
-    .portfolio__item--6 {
-      background-image: url(../img/port-starbucks.jpg);
-      height: 500px;
-      background-size: cover;
-      background-position: center;
-      grid-column: span 2; }
+
+/* ---------- Zoom container ---------- */
+.image-zoom-container {
+  list-style: none;
+  font-size: 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; }
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.zoom-container img {
+  display: block;
+  width: auto;
+  height: 400px;
+  object-position: center;
+  object-fit: fill;
+  -webkit-transition: all 0.5s ease;
+  /* Safari and Chrome */
+  -moz-transition: all 0.5s ease;
+  /* Firefox */
+  -ms-transition: all 0.5s ease;
+  /* IE 9 */
+  -o-transition: all 0.5s ease;
+  /* Opera */
+  transition: all 0.5s ease;
+  filter: grayscale(1); }
+
+.zoom-container .zoom-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  /* Safari and Chrome */
+  -moz-transition: all 0.5s ease;
+  /* Firefox */
+  -ms-transition: all 0.5s ease;
+  /* IE 9 */
+  -o-transition: all 0.5s ease;
+  /* Opera */
+  transition: all 0.5s ease; }
+
+.zoom-container .zoom-caption h3 {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 9.5rem 0 0 0; }
+
+.zoom-container:hover img {
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25);
+  filter: grayscale(0);
+  transition: 2s linear; }
+  .zoom-container:hover img .zoom-container .zoom-caption h3 {
+    display: block; }
+
+.zoom-container:hover .zoom-caption {
+  background-color: none; }
 
 .our-work {
-  margin: 1px;
   position: relative; }
 
 .keyart,
@@ -201,16 +249,6 @@ body {
   font-weight: 400;
   font-style: italic;
   letter-spacing: 1rem; }
-
-.teste {
-  background-color: #000;
-  color: #fff;
-  height: 100px;
-  position: relative;
-  z-index: 98; }
-
-#hello {
-  color: #fff; }
 
 #maincontain {
   background-color: #000;

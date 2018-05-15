@@ -17,6 +17,7 @@ html {
 body {
   background-color: #000;
   box-sizing: border-box; /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */
+  scroll-behavior: smooth;
 }
 
 .container {

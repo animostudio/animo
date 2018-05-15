@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
+
+
     <script src="js/main.js"></script>
 
     <title>Animo Studio</title>
@@ -18,29 +20,10 @@
 <body>
     <!-- HEADDER / NAVEGATION BAR -->
     <header class="header">
-        <div>
-            <nav class="header__menu">
-                <ul>
-                    <li>
-                        <p class="header__menu--contact">contato@animo.studio</p>
-
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="index.html" class="header__logo">
-                            <img src="img/animoStudio-black.png" alt="Animo Studio Logo - Header">
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p class="header__menu--contact">
-                            <span>+55</span> 55 99153 1278
-                        </p>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header__menu">
+            <a href="index.html" class="header__logo" id="logo" onclick="showLogo()">
+                <img src="img/animoStudio-white.png" alt="Animo Studio Logo - Header">
+            </a>
         </div>
     </header>
 
@@ -52,7 +35,7 @@
 
             <div class="hero__overlay ">
                 <!-- Play Button -->
-                <button onclick="changeZindex() " class="hero__overlay-btn btn btn--animated ">
+                <button onclick="changeZindex()" class="hero__overlay-btn btn btn--animated ">
                     <img src="img/play-4.png " alt="Animo Play Button - Featured Video ">
                 </button>
                 <!-- Logo Animo -->
@@ -62,87 +45,117 @@
     </section>
 
     <!-- PORTFOLIO - OTHER PROJECTS -->
-    <section class="portfolio container">
-        <div class="portfolio__item ">
-            <div class="portfolio__item--1 "></div>
-            <div class="portfolio__item--2 "></div>
-            <div class="portfolio__item--3 "></div>
-            <div class="portfolio__item--4 "></div>
-            <div class="portfolio__item--5 "></div>
-            <div class="portfolio__item--6 "></div>
+    <section class="portfolio">
+        <div class="portfolio__item">
+            <div class="portfolio__item--1">
+                <span>Barbearia Padôva</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--2">
+                <span>Revista Frankie</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--3">
+                <span>Men's Health</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--4">
+                <span>Pizzaria Bella Trento</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--5">
+                <span>Santa Maria Soldiers</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--6">
+                <span>Starbucks</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--7">
+                <span>Autier - Estúdio de Beleza</span>
+                <a href="project.html">ver projeto</a>
+            </div>
+            <div class="portfolio__item--8">
+                <span>Eleven Hamburgueria</span>
+                <a href="project.html">ver projeto</a>
+            </div>
         </div>
     </section>
 
     <!-- O QUE FAZEMOS -->
-    <section class="our-work container">
-        <h2 class="subtitle">O que fazemos</h2>
-        <ul class="our-work__list">
-            <li>
-                <div class="icon">
-                    <img src="img/video-icon.png" alt="" class="icon--img">
-                </div>
-                <h3 class="icon--title">Vídeo</h3>
-                <p class="icon--description">
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+    <section class="our-work">
+        <div class="keyart" id="parallax">
+            <div class="keyart_layer parallax" id="keyart-1" data-speed="69">
+            </div>
+
+            <div class="keyart_layer parallax" id="keyart-2" data-speed="2">
+                <p class="our-work__name">
+                    O que fazemos
                 </p>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/idvisual-icon.png" alt="" class="icon--img">
-                </div>
-                <h3 class="icon--title">Identidade Visual</h3>
-                <p class="icon--description">
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                </p>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/webdesign-icon.png" alt="" class="icon--img">
-                </div>
-                <h3 class="icon--title">Web Design</h3>
-                <p class="icon--description">
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                </p>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/promocional-icon.png" alt="" class="icon--img">
-                </div>
-                <h3 class="icon--title">Promocional</h3>
-                <p class="icon--description">
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                </p>
-            </li>
-        </ul>
+
+                <ul class="our-work__desc">
+                    <li>Videos</li>
+                    <li>Web Design</li>
+                    <li>Promocional</li>
+                    <li>Social Media</li>
+                    <li>Identidade Visual</li>
+                </ul>
+
+            </div>
+
+            <div class="keyart_layer" id="keyart-scrim">
+            </div>
+
+            <div class="keyart_layer parallax" id="keyart-3" data-speed="100">
+            </div>
+        </div>
     </section>
 
-    <!-- CONTATO -->
-    <footer class="footer">
-        <div class="container">
-            <h2 class="subtitle">Contato</h2>
+    <section class="footer" id="footer">
+        <div id="footer-content">
+            <div class="footer__grid">
+                <div class="footer__grid--contato">
+                    <p>Entre em contato</p>
 
-            <form action="enviar.php" method="post" name="form" class="phpform contact-form">
-                <div class="contact-form__info">
-                    <label for="nome">Nome</label>
-                    <input id="nome" name="nome" type="text">
-
-                    <label for="email">E-mail</label>
-                    <input id="email" name="email" type="email">
-
-                    <label for="telefone">Telefone</label>
-                    <input id="telefone" name="telefone" type="text">
+                    <div class="contato__lista">
+                        <ul>
+                            <li>
+                                <span>55</span> 9 915 1278
+                            </li>
+                            <li>
+                                <span>55</span> 9 9632 0226
+                            </li>
+                            <li>contato@animo.studio</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="contact-form__message">
-                    <textarea name="mensagem" id="mensagem"></textarea>
-
-                    <button id="enviar" name="enviar" type="submit" class="btn contact-btn">Enviar</button>
+                <div class="footer__grid--triangulo">
+                    <div class="triangulo--overlay"></div>
                 </div>
-            </form>
+                <div class="footer__grid--orcamento">
+                    <a href="#">Solicite um orçamento</a>
+                </div>
+            </div>
         </div>
 
-    </footer>
+    </section>
 
+
+
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    </script>
+
+    <script type="text/javascript" src="js/firewizard.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,81 @@
+.portfolio {
+  margin-top: 3px;
+  position: relative;
+  z-index: 98;
+  overflow: hidden;
+
+  &__item {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+
+    &--1 {
+      background-image: url(../img/port-barber.jpg);
+      grid-column: span 2;
+    }
+
+    &--2 {
+      background-image: url(../img/port-frankie.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/port-journal.jpg);
+    }
+
+    &--4 {
+      background-image: url(../img/port-pizza.jpg);
+    }
+
+    &--5 {
+      background-image: url(../img/port-soldiers.jpg);
+    }
+
+    &--6 {
+      background-image: url(../img/port-starbucks.jpg);
+    }
+
+    &--7 {
+      background-image: url(../img/port-beauty.jpg);
+    }
+
+    &--8 {
+      background-image: url(../img/port-burguer.jpg);
+      grid-column: span 2;
+    }
+  }
+
+  [class^="portfolio__item--"] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    filter: grayscale(100%);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      filter: grayscale(0);
+      transition: 2s linear;
+      // opacity: 0;
+      // transform: scale(1.2);
+
+      & a,
+      & span {
+        display: block;
+        transition: 0.6s ease;
+      }
+    }
+
+    & span,
+    a {
+      display: none;
+      font-family: $font-family;
+      color: #fff;
+      margin: auto;
+    }
+  }
+}
