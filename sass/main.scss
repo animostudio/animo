@@ -18,11 +18,19 @@ npm run compile:sass
 @import "components/button";
 
 /* LAYOUT */
+// Main
 @import "layout/header";
 @import "layout/hero";
 @import "layout/portfolio";
 @import "layout/ourwork";
 @import "layout/footer";
+@import "layout/copyright";
+// Project
+@import "layout/projheader";
+@import "layout/projmaincontent";
+@import "layout/projimages";
+@import "layout/projfooter";
 
 /* PAGES */
 @import "pages/home";
+@import "pages/project";

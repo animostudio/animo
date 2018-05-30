@@ -21,7 +21,7 @@
     <!-- HEADDER / NAVEGATION BAR -->
     <header class="header">
         <div class="header__menu">
-            <a href="index.html" class="header__logo" id="logo" onclick="showLogo()">
+            <a href="index.html" class="header__logo" id="logo">
                 <img src="img/animoStudio-white.png" alt="Animo Studio Logo - Header">
             </a>
         </div>
@@ -30,8 +30,12 @@
     <!-- HERO - FEATURED VIDEO -->
     <section class="hero">
         <div class="hero__featured-video">
-            <iframe id="featuredVideo" src="https://player.vimeo.com/video/257827649?color=ffffff&title=0&byline=0&portrait=0
-                            " width="640 " height="360 " frameborder="0 " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe id="featuredVideo" src="https://player.vimeo.com/video/257827649" width="100% " height="100%" frameborder="0" webkitallowfullscreen
+                mozallowfullscreen allowfullscreen></iframe>
+
+
+            <!-- <iframe id="featuredVideo" src="https://player.vimeo.com/video/257827649?color=ffffff&title=0&byline=0&portrait=0
+                            " width="100% " height="100%" frameborder="0 " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
             <div class="hero__overlay ">
                 <!-- Play Button -->
@@ -51,7 +55,7 @@
         <div class="container">
             <div class="image-zoom-container">
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Barbearia Padôva </h3>
                         </span>
@@ -59,7 +63,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Autier - Estúdio de Beleza </h3>
                         </span>
@@ -67,7 +71,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Eleven Hamburgueria </h3>
                         </span>
@@ -75,7 +79,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Frankie Magazine </h3>
                         </span>
@@ -83,7 +87,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Men's Health </h3>
                         </span>
@@ -91,7 +95,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Pizzaria Bella Trento </h3>
                         </span>
@@ -99,7 +103,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Santa Maria Soldiers </h3>
                         </span>
@@ -107,7 +111,7 @@
                     </a>
                 </div>
                 <div class="zoom-container">
-                    <a href="#">
+                    <a href="project.html">
                         <span class="zoom-caption">
                             <h3> Starbucks </h3>
                         </span>
@@ -121,8 +125,22 @@
 
     <!-- O QUE FAZEMOS -->
     <section class="our-work">
+        <div class="keyart" id="nonparallax">
+            <p class="our-work__name">
+                O que fazemos
+            </p>
+
+            <ul class="our-work__desc">
+                <li>Videos</li>
+                <li>Web Design</li>
+                <li>Promocional</li>
+                <li>Social Media</li>
+                <li>Identidade Visual</li>
+            </ul>
+        </div>
+
         <div class="keyart" id="parallax">
-            <div class="keyart_layer parallax" id="keyart-1" data-speed="69">
+            <div class="keyart_layer parallax" id="keyart-1" data-speed="79">
             </div>
 
             <div class="keyart_layer parallax" id="keyart-2" data-speed="2">
@@ -143,39 +161,39 @@
             <div class="keyart_layer" id="keyart-scrim">
             </div>
 
-            <div class="keyart_layer parallax" id="keyart-3" data-speed="100">
+            <div class="keyart_layer parallax" id="keyart-3">
             </div>
         </div>
     </section>
 
-    <section class="footer" id="footer">
-        <div id="footer-content">
-            <div class="footer__grid">
-                <div class="footer__grid--contato">
-                    <p>Entre em contato</p>
+    <section class="footer">
+        <div class="footer__content clearfix">
+            <div class="footer__content--contato">
+                <p>Entre em contato</p>
 
-                    <div class="contato__lista">
-                        <ul>
-                            <li>
-                                <span>55</span> 9 915 1278
-                            </li>
-                            <li>
-                                <span>55</span> 9 9632 0226
-                            </li>
-                            <li>contato@animo.studio</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer__grid--triangulo">
-                    <div class="triangulo--overlay"></div>
-                </div>
-                <div class="footer__grid--orcamento">
-                    <a href="#">Solicite um orçamento</a>
+                <div class="contato-lista">
+                    <ul>
+                        <li>
+                            <span>55</span> 9 915 1278
+                        </li>
+                        <li>
+                            <span>55</span> 9 9632 0226
+                        </li>
+                        <li>contato@animo.studio</li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
+            <div class="footer__content--orcamento">
+                <a href="#">Solicite um orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright">
+        <p>
+            Copyright © 2018 Animo Studio
+        </p>
     </section>
 
 
@@ -183,16 +201,15 @@
 
 
 
-
+    <!-- JAVASCRIPT -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-
 
     <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     </script>
 
-    <script type="text/javascript" src="js/firewizard.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <!-- JAVASCRIIPT -->
 </body>
 
 </html>
