@@ -45,8 +45,8 @@
   /* Opera */
   transition: all 0.5s ease;
 
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.8);
 }
 
 .zoom-container .zoom-caption {
@@ -80,19 +80,19 @@
 }
 
 .zoom-container:hover img {
-  -webkit-transform: scale(1.25);
+  -webkit-transform: scale(1.1);
   /* Safari and Chrome */
-  -moz-transform: scale(1.25);
+  -moz-transform: scale(1.1);
   /* Firefox */
-  -ms-transform: scale(1.25);
+  -ms-transform: scale(1.1);
   /* IE 9 */
-  -o-transform: scale(1.25);
+  -o-transform: scale(1.1);
   /* Opera */
-  transform: scale(1.25);
+  transform: scale(1.1);
 
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
-  transition: 2s linear;
+  transition: 1.5s linear;
 
   & .zoom-container .zoom-caption h3 {
     display: block;

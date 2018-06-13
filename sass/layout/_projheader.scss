@@ -1,14 +1,11 @@
-// .projheader {
-//   position: absolute;
-//   top: 20px;
-//   width: 100%;
-//   z-index: 10;
-//   height: 0;
+.projheader {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 25px 0;
 
-//   &__proj {
-//     & img {
-//       height: 70px;
-//       position: relative;
-//     }
-//   }
-// }
+  &__proj a img {
+    height: 70px;
+  }
+}
