@@ -22,22 +22,15 @@
     width: 100%;
     overflow: hidden;
 
-    & ul {
-      list-style: none;
+    & div {
       margin: 0;
       padding: 0;
-
-      & li {
-        display: block;
-        width: 200px;
-        height: 200px;
-        float: left;
-        object-position: center;
-        object-fit: cover;
-
+      display: block;
+      float: left;
+      
         & img {
           width: 200px;
-          height: 200px;
+          height: auto;
           object-position: center;
           object-fit: cover;
         }
