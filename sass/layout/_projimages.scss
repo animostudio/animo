@@ -27,13 +27,12 @@
       padding: 0;
       display: block;
       float: left;
-      
-        & img {
-          width: 200px;
-          height: auto;
-          object-position: center;
-          object-fit: cover;
-        }
+
+      & img {
+        width: 200px;
+        height: auto;
+        object-position: center;
+        object-fit: cover;
       }
     }
   }

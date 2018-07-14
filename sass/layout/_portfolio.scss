@@ -30,8 +30,8 @@
 }
 
 .zoom-container img {
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: 50% 50%;
   -webkit-transition: all 0.5s ease;
@@ -88,9 +88,7 @@
   -o-transform: scale(1.1);
   /* Opera */
   transform: scale(1.1);
-
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+  wfilter: grayscale(0);
   transition: 1.5s linear;
 
   & .zoom-container .zoom-caption h3 {
@@ -115,8 +113,8 @@
 //   }
 // }
 
-// @media (max-width: 480px) {
-//   .zoom-container {
-//     width: 100%;
-//   }
-// }
+@media (max-width: 601px) {
+  .image-zoom-container {
+    grid-template-columns: 1fr;
+  }
+}
