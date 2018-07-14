@@ -51,7 +51,7 @@
 
     &--orcamento {
       position: relative;
-      top: 51%;
+      top: 51.5%;
       font-size: 1.5rem;
       color: #000;
       text-transform: uppercase;
@@ -63,6 +63,7 @@
       & a:visited {
         text-decoration: none;
         color: #000;
+        padding: 0 0 0 10px;
       }
     }
   }
@@ -70,4 +71,100 @@
 
 .clearfix {
   overflow: auto;
+}
+
+@media screen and (max-width: 620px) {
+  .footer__content--orcamento {
+    top: 49.5%;
+    & a:link,
+    & a:visited {
+      & span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__content {
+    background-size: inherit;
+    padding-right: 2fr;
+    padding-left: 10px;
+
+    &--contato {
+      top: 47%;
+      & p {
+        font-size: 1rem;
+      }
+
+      & ul {
+        font-size: 0.9rem;
+        text-align: left;
+        font-weight: 500;
+
+        & li span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &--orcamento {
+      top: 49.5%;
+    }
+  }
+
+  .footer__content--orcamento a:link,
+  & a:visited {
+    font-size: 1rem;
+    font-weight: 500;
+    & span {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__content {
+    background-size: inherit;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    &--contato {
+      top: 47%;
+      & p {
+        display: none;
+      }
+
+      & ul {
+        &::before {
+          font-size: 1rem;
+          content: "CONTATO";
+          font-weight: 500;
+        }
+        font-size: 1rem;
+        text-align: left;
+
+        & li {
+          font-size: 0.85rem;
+          font-weight: 500;
+          & span {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    &--orcamento {
+      top: 49.5%;
+    }
+  }
+
+  .footer__content--orcamento a:link,
+  & a:visited {
+    font-size: 1rem;
+    font-weight: 500;
+    & span {
+      display: block;
+    }
+  }
 }

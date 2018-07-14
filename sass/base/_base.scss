@@ -18,9 +18,9 @@ body {
   background-color: #000;
   box-sizing: border-box; /* Faz com que o padding do conteúdo seja "pra dentro" do tamanho do container, não somando na largura/altura do container */
   scroll-behavior: smooth;
-  min-width: 600px; /* Suppose you want minimum width of 1000px */
+  min-width: 320px; //Suppose you want minimum width of 1000px
   width: auto !important; /* Firefox will set width as auto */
-  width: 600px;
+  width: 320px;
 }
 
 .container {
