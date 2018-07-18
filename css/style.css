@@ -14,7 +14,7 @@ npm run compile:sass
   box-sizing: border-box;
   /* ?? */ }
 
-span {
+.span {
   display: block; }
 
 /* ROOT */
@@ -397,7 +397,7 @@ body {
     .footer__content--orcamento {
       position: relative;
       top: 51.5%;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #000;
       text-transform: uppercase;
       font-weight: 300;
@@ -412,9 +412,16 @@ body {
 .clearfix {
   overflow: auto; }
 
+@media screen and (max-width: 750px) {
+  .footer__content--orcamento {
+    top: 47.5%; }
+    .footer__content--orcamento a:link span,
+    .footer__content--orcamento a:visited span {
+      display: block; } }
+
 @media screen and (max-width: 620px) {
   .footer__content--orcamento {
-    top: 49.5%; }
+    top: 47.5%; }
     .footer__content--orcamento a:link span,
     .footer__content--orcamento a:visited span {
       display: block; } }
@@ -435,7 +442,7 @@ body {
         .footer__content--contato ul li span {
           font-size: 0.7rem; }
     .footer__content--orcamento {
-      top: 49.5%; }
+      top: 47.5%; }
   .footer__content--orcamento a:link,
   a:visited {
     font-size: 1rem;
@@ -466,7 +473,7 @@ body {
           .footer__content--contato ul li span {
             font-size: 0.7rem; }
     .footer__content--orcamento {
-      top: 49.5%; }
+      top: 47.5%; }
   .footer__content--orcamento a:link,
   a:visited {
     font-size: 1rem;

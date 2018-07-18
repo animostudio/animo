@@ -52,7 +52,7 @@
     &--orcamento {
       position: relative;
       top: 51.5%;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #000;
       text-transform: uppercase;
       font-weight: 300;
@@ -73,9 +73,21 @@
   overflow: auto;
 }
 
+@media screen and (max-width: 750px) {
+  .footer__content--orcamento {
+    top: 47.5%;
+    & a:link,
+    & a:visited {
+      & span {
+        display: block;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 620px) {
   .footer__content--orcamento {
-    top: 49.5%;
+    top: 47.5%;
     & a:link,
     & a:visited {
       & span {
@@ -109,7 +121,7 @@
     }
 
     &--orcamento {
-      top: 49.5%;
+      top: 47.5%;
     }
   }
 
@@ -155,7 +167,7 @@
     }
 
     &--orcamento {
-      top: 49.5%;
+      top: 47.5%;
     }
   }
 
