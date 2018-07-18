@@ -1,4 +1,4 @@
-$(".projImages__slider").slick({
+$('#carousel').slick({
   dots: true,
   infinite: false,
   speed: 300,

@@ -89,38 +89,3 @@
     margin-left: 15px;
   }
 }
-
-// &::before {
-//   content: "";
-//   display: block;
-//   width: 20%;
-//   height: 1px;
-//   background: $color-gray;
-//   margin: 0 auto 20px;
-// }
-
-// &__title {
-//   text-transform: uppercase;
-//   font-weight: 600;
-//   letter-spacing: 0.2rem;
-//   font-size: 1.5rem;
-// }
-
-// &__slider {
-//   width: 100%;
-//   overflow: hidden;
-
-//   & div {
-//     margin: 0;
-//     padding: 0;
-//     display: block;
-//     float: left;
-
-//     & img {
-//       width: 200px;
-//       height: auto;
-//       object-position: center;
-//       object-fit: cover;
-//     }
-//   }
-// }
