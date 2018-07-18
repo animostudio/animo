@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Animo Studio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- SLICK - FOR IMAGE SLIDER -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="projheader">
+        <div class="projheader__proj">
+            <a href="index.html" class="header__logo" id="logo">
+                <img src="img/animoStudio-white.png" alt="Animo Studio Logo - Header">
+            </a>
+        </div>
+    </header>
+
+    <section class="mainContent">
+        <div class="projInfo">
+            <h1 class="projInfo__title">Santa Maria Soldiers</h1>
+            <span class="projInfo__subtitle">Abertura da Temporada 2018</span>
+
+            <a href="index.html" class="projInfo__backbutton btn button">
+                < Voltar </a>
+        </div>
+
+        <div class="projFeature">
+            <iframe id="featuredVideo" src="https://player.vimeo.com/video/257827649" width="530 " height="315" frameborder="0" webkitallowfullscreen
+                mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <div class="projDescription">
+            <div class="projDescription__desc">
+                Primeiro trabalho desenvolvido pela Animo Studio em parceria com o Santa Maria Soldiers!
+                <span>Segue o vídeo de lançamento da temporada de 2018 do time de Futebol Americano da cidade de Santa Maria.</span>
+            </div>
+
+            <div class="projDescription__credits">
+                <h3 class="credits--title">
+                    Créditos:
+                </h3>
+                <p class="credits--name">
+                    <span>Produção | Direção</span>
+                    <span>Montagem | Edição</span>
+                    <span>Finalização</span>
+                    Douglas Rodrigues dos Santos
+
+                    <span class="other_name">Captação</span>
+                    Júlio Porto Desordi
+
+                </p>
+
+                <h3 class="credits--title">
+                    Empresa:
+                </h3>
+                <p class="credits--name">
+                    Santa Maria Soldiers
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projImages">
+        <h2 class="projImages__title">
+            Mais imagens do projeto
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div id="carousel" class="carousel">
+                    <div class="item one"></div>
+                    <div class="item two"></div>
+                    <div class="item three"></div>
+                    <div class="item four"></div>
+                    <div class="item five"></div>
+                    <div class="item six"></div>
+                    <div class="item seven"></div>
+                    <div class="item eight"></div>
+                    <div class="item nine"></div>
+                    <div class="item ten"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="container ">
+        <div class="row ">
+            <div id="carousel" class="carousel">
+                <div class="item one"></div>
+                <div class="item two"></div>
+                <div class="item three"></div>
+                <div class="item four"></div>
+                <div class="item five"></div>
+                <div class="item six"></div>
+                <div class="item seven"></div>
+                <div class="item eight"></div>
+                <div class="item nine"></div>
+                <div class="item ten"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="projFooter">
+        <div class="projFooter__info">
+            <div class="info__contact">
+                <ul>
+                    <li>contato@animo.studio</li>
+                    <li>
+                        <span>55</span> 9 915 1278
+                    </li>
+                    <li>
+                        <span>55</span> 9 9632 0226
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info__orcamento">
+            Solicite um orçamento
+        </div>
+
+        <div class="copyright">
+            Copyright © 2018 Animo Studio
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- SLICK SLIDER -->
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $('#carousel').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+
+</body>

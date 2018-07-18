@@ -68,7 +68,8 @@
       font-weight: normal;
 
       & .credits--title {
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 1.3rem;
         color: $color-gray;
         font-style: italic;
         padding-bottom: 5px;
@@ -80,6 +81,16 @@
 
         &:not(:last-child) {
           padding-bottom: 25px;
+        }
+
+        & span {
+          font-weight: 400;
+          font-size: 1.2rem;
+          color: $color-gray;
+        }
+
+        & .other_name {
+          margin-top: 5px;
         }
       }
     }
