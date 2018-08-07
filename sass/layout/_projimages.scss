@@ -40,48 +40,54 @@
   }
 
   .item {
-    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    & img {
+      height: 200px;
+    }
   }
 
-  .one {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .one {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .two {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .two {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .three {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .three {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .four {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .four {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .five {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .five {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .six {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .six {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .seven {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .seven {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .eight {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .eight {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .nine {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .nine {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
-  .ten {
-    background-image: url("../img/port/port-soldiers-min.jpg");
-  }
+  // .ten {
+  //   background-image: url("../img/port/port-soldiers-min.jpg");
+  // }
 
   .slick-slide {
     width: 230px;

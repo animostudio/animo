@@ -538,6 +538,11 @@ body {
       left: 0;
       width: 100%;
       height: 100%; }
+  .mainContent .projImage {
+    position: relative; }
+    .mainContent .projImage img {
+      height: auto;
+      width: 100%; }
   .mainContent .projDescription {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -598,27 +603,11 @@ body {
     z-index: 9999;
     color: black; }
   .projImages .item {
-    height: 200px; }
-  .projImages .one {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .two {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .three {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .four {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .five {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .six {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .seven {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .eight {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .nine {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
-  .projImages .ten {
-    background-image: url("../img/port/port-soldiers-min.jpg"); }
+    width: 200px;
+    object-fit: cover;
+    object-position: 50% 50%; }
+    .projImages .item img {
+      height: 200px; }
   .projImages .slick-slide {
     width: 230px;
     margin-right: 15px;

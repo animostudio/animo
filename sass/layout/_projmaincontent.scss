@@ -52,6 +52,14 @@
     }
   }
 
+  & .projImage {
+    position: relative;
+    & img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
   & .projDescription {
     display: grid;
     grid-template-columns: 3fr 1fr;
