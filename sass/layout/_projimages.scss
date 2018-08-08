@@ -20,7 +20,7 @@
 
   .slick-prev:before,
   .slick-next:before {
-    color: black;
+    color: rgba(97, 95, 95, 0.753);
   }
 
   .container {
@@ -36,10 +36,12 @@
     list-style: none;
     margin: 50px;
     z-index: 9999;
-    color: black;
+    color: rgb(7, 7, 7);
   }
 
   .item {
+    margin: 0;
+    padding: 0;
     width: 200px;
     object-fit: cover;
     object-position: 50% 50%;

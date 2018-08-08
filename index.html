@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-
-
     <script src="js/main.js"></script>
 
     <title>Animo Studio</title>
@@ -21,7 +19,7 @@
     <!-- HEADDER / NAVEGATION BAR -->
     <header class="header">
         <div class="header__menu">
-            <a href="index.html" class="header__logo" id="logo">
+            <a href="index.html" class="header__logo" id="logo" onscroll="showLogo()">
                 <img src="img/animoStudio-white.png" alt="Animo Studio Logo - Header">
             </a>
         </div>
@@ -35,7 +33,7 @@
 
             <div class="hero__overlay ">
                 <!-- Play Button -->
-                <button onclick="changeZindex()" class="hero__overlay-btn btn btn--animated ">
+                <button onclick="changeZindex()" class="hero__overlay-btn btn btn--animated " id="playbutton">
                     <img src="img/play-4.png " alt="Animo Play Button - Featured Video ">
                 </button>
                 <!-- Logo Animo -->
@@ -130,6 +128,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <section class="footer">
         <div class="footer__content clearfix">
             <div class="footer__content--contato">
@@ -157,6 +156,7 @@
         </div>
     </section>
 
+    <!-- Copyright -->
     <section class="copyright">
         <p>
             Copyright © 2018 Animo Studio
@@ -165,16 +165,28 @@
 
 
 
-
-
-
     <!-- JAVASCRIPT -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
+    <!-- Parallax -->
     <script type="text/javascript" src="js/parallax.js"></script>
+    <!-- Vimeo -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        var iframe = document.querySelector('iframe');
+        var player = new Vimeo.Player(iframe);
+
+        player.on('play', function () {
+            console.log('played the video!');
+        });
+
+        player.getVideoTitle().then(function (title) {
+            console.log('title:', title);
+        });
+    </script>
+
     <!-- JAVASCRIIPT -->
 </body>
 
