@@ -58,10 +58,12 @@ body {
   display: block;
   background: transparent;
   z-index: 10;
-  height: 0; }
+  height: 0;
+  transition: top 0.3s; }
   .header__menu img {
     height: 70px;
-    position: relative; }
+    position: relative;
+    visibility: hidden; }
 
 .hero {
   display: inherit; }
@@ -482,6 +484,22 @@ body {
     .footer__content--orcamento a:link span,
     a:visited span {
       display: block; } }
+
+.socialMedia {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 0; }
+  .socialMedia__icons ul li {
+    display: inline-block;
+    margin-right: 10px; }
+    .socialMedia__icons ul li a {
+      display: block;
+      padding: 10px;
+      transition: all 0.5s ease;
+      font-size: 3rem;
+      color: #fff;
+      text-align: center; }
 
 .copyright p {
   color: #fff;
