@@ -51,16 +51,17 @@ body {
 /* COMPONENTS */
 /* LAYOUT */
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
+  margin-top: 10px;
   width: 100%;
+  display: block;
   background: transparent;
   z-index: 10;
   height: 0; }
   .header__menu img {
     height: 70px;
-    position: relative;
-    visibility: hidden; }
+    position: relative; }
 
 .hero {
   display: inherit; }
