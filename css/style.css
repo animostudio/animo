@@ -624,11 +624,11 @@ body {
   .projImages .item {
     margin: 0;
     padding: 0;
-    width: 200px;
     object-fit: cover;
     object-position: 50% 50%; }
     .projImages .item img {
-      height: 200px; }
+      height: auto;
+      width: 100%; }
   .projImages .slick-slide {
     width: 230px;
     margin-right: 15px;
