@@ -85,7 +85,9 @@ body {
     z-index: 1;
     width: 100%;
     height: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    background-color: #000;
+    opacity: 0.8; }
     .hero__overlay-btn {
       background-color: Transparent;
       border: none;
@@ -93,11 +95,13 @@ body {
       cursor: pointer;
       position: absolute;
       right: 47%;
-      top: 40%; }
+      top: 40%;
+      height: auto; }
     .hero__overlay-a {
       position: relative;
       width: 25%;
-      top: 60%; }
+      top: 60%;
+      opacity: 1; }
 
 .porfolio {
   margin: 0;
